@@ -213,6 +213,20 @@ const deleteProp = function(object , prop){
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
 
+let oldest = movies[0]
+
+const oldestMovie = function(){
+    
+    for ( i=0; i<movies.length; i++){
+        if (movies[i].Year < oldest.Year){
+            oldest = movies[i]
+        }
+    }console.log(oldest)
+}
+
+oldestMovie()
+
+
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
