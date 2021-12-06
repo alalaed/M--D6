@@ -382,6 +382,19 @@ const removeIndex = function(givenIndex){
   ***
 */
 
+let star = "*"
+let height = 3
+let tree = " "
+
+const halfTree = function(){
+  for ( i=1;i<=height;i++){
+    tree=tree+star
+    console.log(tree)
+  }  
+}
+
+
+
 /* EXERCISE 22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
   Example: 
@@ -399,7 +412,7 @@ let prime = 2
 const isItPrime = function(){
 
   if (prime===2|| prime ===3|| prime===5||prime===7){
-    
+
     console.log("is a prime")
   }
     else if(
