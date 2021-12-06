@@ -366,7 +366,12 @@ searchByTitle("Lord")
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
 
-// [EXTRAS] JS Advanced
+let givenIndex = 1
+
+const removeIndex = function(givenIndex){
+  movies.splice(givenIndex-1,1)
+  console.log(movies)
+}
 
 /* EXERCISE 21
   Create a function called "halfTree" which receives a number as a parameter and builds an "*" half tree with the given height.
@@ -389,6 +394,36 @@ searchByTitle("Lord")
 /* EXERCISE 23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
+
+let prime = 2
+const isItPrime = function(){
+
+  if (prime===2|| prime ===3|| prime===5||prime===7){
+    
+    console.log("is a prime")
+  }
+    else if(
+        prime%2 !==0 && 
+        prime%3 !==0 &&  
+        prime%4 !==0 && 
+        prime%5 !==0 &&
+        prime%6 !==0 &&
+        prime%7 !==0 &&
+        prime%8 !==0 &&
+        prime%9 !==0 
+    )
+    {
+        console.log("is a Prime")
+    }
+    else console.log("is not a Prime")
+
+}
+
+isItPrime()
+
+
+
+
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
