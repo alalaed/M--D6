@@ -317,12 +317,16 @@ sumAllTheYears()
 
 let title = " "
 let chosenTitle = []
+let notchosenTitle = []
 const searchByTitle = function(title){
     for ( i=0; i<movies.length; i++){
 
         if ((movies[i].Title).includes(title)){
+
             chosenTitle.push(movies[i])
-        }
+
+        }else notchosenTitle.push(movies[i])
+
     } console.log(chosenTitle)
 
 }
@@ -336,6 +340,27 @@ searchByTitle("Lord")
     this object should contain an array called match, made by all the movies from the provided movies array which contain the given string in the title,
     and another array unmatch with all the remaining ones.
 */
+
+
+let title = " "
+let chosenTitle = []
+let notchosenTitle = []
+const searchByTitle = function(title){
+    for ( i=0; i<movies.length; i++){
+
+        if ((movies[i].Title).includes(title)){
+
+            chosenTitle.push(movies[i])
+
+        }else notchosenTitle.push(movies[i])
+
+    } console.log(chosenTitle)
+
+}
+
+searchByTitle("Lord")
+
+
 
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.

@@ -114,16 +114,29 @@ const movies = [
   ];
 
 
-let title = " "
-let chosenTitle = []
-const searchByTitle = function(title){
-    for ( i=0; i<movies.length; i++){
+  let title = " "
+  let chosenTitle = []
+  let notchosenTitle = []
+  const searchByTitle = function(title){
+      for ( i=0; i<movies.length; i++){
+  
+          if ((movies[i].Title).includes(title)){
+  
+              chosenTitle.push(movies[i].Title)
+  
+          }else notchosenTitle.push(movies[i].Title)
+  
+      } console.log(chosenTitle)
+  
+  }
+  
 
-        if ((movies[i].Title).includes(title)){
-            chosenTitle.push(movies[i])
-        }
-    } console.log(chosenTitle)
+//searchByTitle("Lord")
 
-}
+//let notchosenTitle = []
+const searchAndDivide = function(title){
+    searchByTitle
+    console.log(notchosenTitle)
+  }
 
-searchByTitle("Lord")
+searchAndDivide("jitsu")
