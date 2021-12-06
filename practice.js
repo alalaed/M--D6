@@ -34,9 +34,9 @@ let sum = 10 + 11 + 12 +13 + 14 + 15 + 16 + 17 + 18 + 19 + 20
 */
 
 const me = {
-    name = "Ali",
-    surname = "Alaeddine",
-    age = 32
+    name : "Ali",
+    surname : "Alaeddine",
+    age : 32
 }
 
 /* EXERCISE E
@@ -50,9 +50,16 @@ delete me.age
    Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
 */
 
+me.skills = ["html","CSS","JavaScript"]
+
+
+
 /* EXERCISE G
    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
+
+me.skills.pop()
+console.log(me)
 
 // JS Functions
 /* EXERCISE 1

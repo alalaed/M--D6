@@ -23,5 +23,11 @@ let me = {
     age : 32
 }
 
-//delete me.age
-console.log(me)
+delete me.age
+me.jordan = [1,2,3,4,5]
+//console.log(me)
+
+
+me.jordan.pop()
+
+console.log(me.jordan)
