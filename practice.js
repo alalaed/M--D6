@@ -95,10 +95,31 @@ const whoIsBigger = function(n1,n2){
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
+let strive = "I Love Coding"
+const splitMe = function(){
+    let result = strive.split(" ")
+    return result
+}
+
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+
+let strive = "I Love Coding"
+let j = false
+const deleteOne = function(strive,j){
+
+    if( j === true ){
+        strive = strive.slice(1,strive.length) 
+    } else strive = strive.slice(0, -1)
+    console.log(strive)
+
+}
+
+deleteOne(strive,j)
+
+
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
@@ -108,6 +129,14 @@ const whoIsBigger = function(n1,n2){
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
+
+let email = "green@gmail.com"
+const isThisAnEmail = function(){
+
+  if(email.includes("@"))
+  return true;
+  else return "error"
+}
 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
