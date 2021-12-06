@@ -95,7 +95,7 @@ const whoIsBigger = function(n1,n2){
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
-let strive = "I Love Coding"
+let strive = "I Love Coding 325 I love Coding 567"
 const splitMe = function(){
     let result = strive.split(" ")
     return result
@@ -106,7 +106,7 @@ const splitMe = function(){
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
 
-let strive = "I Love Coding"
+//let strive = "I Love Coding"
 let j = false
 const deleteOne = function(strive,j){
 
@@ -125,7 +125,8 @@ deleteOne(strive,j)
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
-let strive = "i love coding 32 hzrje 432 df 4  6 7 8 9 kukug"
+//let strive = "i love coding 32 hzrje 432 df 4  6 7 8 9 kukug"
+
 
 const onlyLetters = function(){
 
@@ -162,6 +163,22 @@ const isThisAnEmail = function(){
         values: [3, 3, 4]
     }
 */
+
+let values = []
+let sum = 0
+const rollTheDices = function(n){
+    
+    for (i=0; i<n; i++){
+        values.push(dice())
+    }console.log("values: " + values)
+
+    for (i=0; i<values.length; i++){
+        sum = sum + values[i]
+    } console.log("sum: " + sum)
+}
+
+rollTheDices(3)
+
 
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
