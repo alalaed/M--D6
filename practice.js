@@ -33,9 +33,18 @@ let sum = 10 + 11 + 12 +13 + 14 + 15 + 16 + 17 + 18 + 19 + 20
     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
 
+const me = {
+    name = "Ali",
+    surname = "Alaeddine",
+    age = 32
+}
+
 /* EXERCISE E
     Write a piece of code for programmatically removing the age property from the previously create object.
 */
+
+delete me.age
+
 
 /* EXERCISE F
    Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.

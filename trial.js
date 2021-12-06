@@ -1,5 +1,27 @@
-/* EXERCISE B
-    Create a variable called sum and assign to it the result of the sum between the numbers 10 and 20.
+
+/* EXERCISE C
+    Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
- 
-let sum = 10 + 11 + 12 +13 + 14 + 15 + 16 + 17 + 18 + 19 + 20
+
+
+
+
+
+
+
+let random = Math.floor(Math.random()*100)
+  
+
+
+/* EXERCISE D
+    Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
+*/
+
+let me = {
+    name : "Ali",
+    surname : "Alaeddine",
+    age : 32
+}
+
+//delete me.age
+console.log(me)
