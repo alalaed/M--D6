@@ -9,7 +9,7 @@
 
 
 
-let random = Math.floor(Math.random()*100)
+let random = Math.floor(Math.random()*20)
   
 
 
@@ -31,3 +31,4 @@ me.jordan = [1,2,3,4,5]
 me.jordan.pop()
 
 console.log(me.jordan)
+console.log(random)
