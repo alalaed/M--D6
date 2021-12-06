@@ -2,12 +2,10 @@
 
 
 
-let randomized
-const dice = function (){
-
-    randomized = Math.floor(Math.random()*6)
-    return randomized
+const whoIsBigger = function(n1,n2){
+    if( n1 > n2){
+        return n1
+    } return n2
 }
 
-console.log(dice())
-
+console.log(whoIsBigger(122,12))
