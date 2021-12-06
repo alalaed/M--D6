@@ -1,19 +1,18 @@
-
-/* EXERCISE 5
-   Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
-   Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
+/* EXERCISE 11
+   Write a function called deleteProp which receives an object and a string as parameters,
+   and returns the given object after deleting its property named as the given string.
 */
 
-let email = "green@gmail.com"
-const isThisAnEmail = function(){
+let object = {
+    name: "COCO"
+ }
+let prop = "DELA"
 
-  if(email.includes("@"))
-  return true;
-  else return "error"
+const deleteProp = function(object , prop){
+
+    console.log(object.name=prop)
+
 }
 
-
-
-    
-
-console.log(isThisAnEmail())
+deleteProp(object,prop)
+console.log(object)
