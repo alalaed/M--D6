@@ -133,4 +133,52 @@ const oldestMovie = function(){
 oldestMovie()
 
 
+/* EXERCISE 14
+    Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
+*/
 
+
+let titles = []
+const onlyTheTitles = function(){
+    for ( i=0; i<movies.length; i++){
+        titles.push(movies[i].Title)
+    }console.log("the titles are: " + titles)
+}
+onlyTheTitles()
+
+
+/* EXERCISE 15
+   Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
+*/
+
+let millinial = [ ]
+const onlyInThisMillennium = function(){
+    for ( i=0; i<movies.length; i++){
+
+        if (movies[i].Year >= "2000"){
+            millinial.push(movies[i])
+        }
+    } console.log(millinial)
+
+}
+
+onlyInThisMillennium()
+
+
+/* EXERCISE 16 
+    Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
+*/
+
+let id = " "
+let chosen
+const getMovieById = function(id){
+    for ( i=0; i<movies.length; i++){
+
+        if (movies[i].imdbID === id){
+            chosen = movies[i]
+        }
+    } console.log(chosen)
+
+}
+
+getMovieById("tt4154796")
