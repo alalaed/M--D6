@@ -182,3 +182,37 @@ const getMovieById = function(id){
 }
 
 getMovieById("tt4154796")
+
+
+/* EXERCISE 17
+    Write a function called sumAllTheYears which returns the sum of all the years in which the movies in the provided movies array have been produced.
+*/
+
+
+let sum = 0
+
+const sumAllTheYears = function(){
+    for ( i=0; i<movies.length; i++){
+
+        sum += +movies[i].Year
+    } console.log(sum)
+
+}
+
+sumAllTheYears()
+
+
+
+let title = " "
+let chosenTitle
+const searchByTitle = function(title){
+    for ( i=0; i<movies.length; i++){
+
+        if ((movies[i].Title).includes(title)){
+            chosenTitle = movies[i]
+        }
+    } console.log(chosenTitle)
+
+}
+
+searchByTitle("lord")

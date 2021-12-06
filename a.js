@@ -1,4 +1,5 @@
 
 
-a = [1,2,3,4]
-console.log(a.length )
+a = "123"
+b= "256"
+console.log(+a + +b )
