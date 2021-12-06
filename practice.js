@@ -125,6 +125,16 @@ deleteOne(strive,j)
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
+let strive = "i love coding 32 hzrje 432 df 4  6 7 8 9 kukug"
+
+const onlyLetters = function(){
+
+    console.log(strive.replace(/\d+/g, " "))
+}    
+    
+
+console.log(onlyLetters())
+
 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
