@@ -404,6 +404,18 @@ const halfTree = function(){
   *****
 */
 
+let x = "*"
+let space = " "
+let h = 4
+let tree
+
+for(i=0; i<h; i++){
+    x = space + x}
+    console.log(x)
+
+
+    
+
 /* EXERCISE 23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */

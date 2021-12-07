@@ -8,7 +8,7 @@
 */
 let star = "*"
 let height = 3
-let tree = " * "
+let tree = "*"
 
 const halfTree = function(){
   for ( i=1;i<=height;i++){
